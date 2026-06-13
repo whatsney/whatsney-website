@@ -1,5 +1,12 @@
 document.getElementById("year").textContent = new Date().getFullYear();
 
+const softwareCareerStartYear = 2018;
+const experienceYears = Math.max(
+  1,
+  new Date().getFullYear() - softwareCareerStartYear
+);
+document.getElementById("experience-years").textContent = experienceYears;
+
 const revealTargets = document.querySelectorAll(
   ".manifesto-grid > *, .section-heading, .project, .contact-grid > *"
 );
