@@ -146,7 +146,6 @@ h2 { font-size: clamp(45px, 5.3vw, 82px); line-height: 1.05; letter-spacing: -.0
 .project { display: grid; grid-template-columns: 70px 1.5fr 1fr 80px; align-items: center; gap: 30px; padding: 42px 10px; border-top: 1px solid var(--line); transition: padding .25s, background .25s; }
 .project:last-child { border-bottom: 1px solid var(--line); }
 .project:hover { padding-left: 25px; padding-right: 25px; background: rgba(255,255,255,.38); }
-.project-featured { cursor: default; }
 .project-index { font: 12px var(--mono); color: #777; }
 .project h3 { font-size: clamp(25px, 3vw, 42px); letter-spacing: -.045em; margin-bottom: 8px; }
 .project p { color: #696963; margin: 0; max-width: 620px; }

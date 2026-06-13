@@ -10,6 +10,12 @@ AudioBridge supports QR and manual pairing, multiple simultaneous receivers,
 lock-screen playback, automatic playback-buffer recovery, and English, Polish,
 and Spanish interfaces. Its Windows and Apple store releases are in preparation.
 
+Public store-facing pages:
+
+- `/audiobridge/` - product and marketing page
+- `/audiobridge/support/` - required App Store support page
+- `/audiobridge/privacy/` - required privacy policy
+
 ## Local preview
 
 Open `index.html` in a browser or serve this directory with any static HTTP server.
