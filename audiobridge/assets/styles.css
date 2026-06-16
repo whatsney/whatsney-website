@@ -11,6 +11,10 @@
     "Segoe UI", sans-serif;
 }
 
+.site-header {
+  padding: 22px 0;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -33,7 +37,15 @@ a {
   color: inherit;
 }
 
-.site-header,
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 22px 0;
+}
+
+.page-shell {
 .page-shell,
 .site-footer {
   width: min(1120px, calc(100% - 32px));
@@ -82,7 +94,6 @@ a {
   border-radius: 999px;
   background: rgba(5, 8, 23, 0.72);
 }
-
 .page-shell {
   padding: 72px 0 96px;
 }
@@ -93,6 +104,10 @@ a {
   align-items: center;
   gap: 64px;
   min-height: 610px;
+}
+
+.section:first-of-type {
+  padding-top: 0;
 }
 
 .eyebrow {
