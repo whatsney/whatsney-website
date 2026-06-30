@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-active-lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,33 +22,39 @@
   <div class="grain" aria-hidden="true"></div>
 
   <header class="site-header">
-    <a class="logo" href="#top" aria-label="whatsney home">
+    <a class="logo" href="#top" aria-label="whatsney home" data-i18n-aria-label="logoAriaLabel">
       <span class="logo-mark">w/</span>
       <span>whatsney</span>
     </a>
-    <nav aria-label="Primary navigation">
-      <a href="#about">About</a>
-      <a href="#work">Work</a>
-      <a href="#contact">Contact</a>
+    <nav aria-label="Primary navigation" data-i18n-aria-label="navigationAriaLabel">
+      <a href="#about" data-i18n="navAbout">About</a>
+      <a href="#work" data-i18n="navWork">Work</a>
+      <a href="#contact" data-i18n="navContact">Contact</a>
     </nav>
-    <a class="header-link" href="https://github.com/whatsney" target="_blank" rel="noreferrer">
-      GitHub <span aria-hidden="true">↗</span>
-    </a>
+    <div class="header-actions">
+      <select class="language-picker" data-language-picker aria-label="Language" data-i18n-aria-label="languagePickerAriaLabel">
+        <option value="en">English</option>
+        <option value="pl">Polski</option>
+      </select>
+      <a class="header-link" href="https://github.com/whatsney" target="_blank" rel="noreferrer">
+        GitHub <span aria-hidden="true">↗</span>
+      </a>
+    </div>
   </header>
 
   <main id="top">
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot"></span> Based in Wrocław, Poland</p>
-        <h1 id="hero-title">Software built<br>with <em>intent.</em></h1>
-        <p class="hero-intro">
+        <p class="eyebrow"><span class="status-dot"></span><span data-i18n="heroEyebrow">Based in Wrocław, Poland</span></p>
+        <h1 id="hero-title" data-i18n="heroTitle">Software built<br>with <em>intent.</em></h1>
+        <p class="hero-intro" data-i18n="heroIntro">
           I’m Tomasz Łacny, the person behind <strong>whatsney</strong>.
           I turn ideas into thoughtful digital products with clean code,
           clear interfaces, and a practical approach.
         </p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#contact">Start a conversation <span>↗</span></a>
-          <a class="text-link" href="#work">Explore my work <span>↓</span></a>
+          <a class="button button-primary" href="#contact" data-i18n="heroPrimaryAction">Start a conversation <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#work" data-i18n="heroSecondaryAction">Explore my work <span aria-hidden="true">↓</span></a>
         </div>
       </div>
 
@@ -69,20 +75,20 @@
           <span class="code-label">WHATSNEY / 001</span>
         </div>
       </div>
-      <p class="scroll-note">Scroll to discover <span>↓</span></p>
+      <p class="scroll-note" data-i18n="scrollNote">Scroll to discover <span aria-hidden="true">↓</span></p>
     </section>
 
     <section class="manifesto" id="about">
-      <p class="section-number">01 / ABOUT</p>
+      <p class="section-number" data-i18n="aboutSectionNumber">01 / ABOUT</p>
       <div class="manifesto-grid">
-        <h2>Technology should make<br>things <em>simpler.</em></h2>
+        <h2 data-i18n="aboutTitle">Technology should make<br>things <em>simpler.</em></h2>
         <div class="manifesto-copy">
-          <p>I have <strong><span id="experience-years">8</span> years of experience</strong> creating software. I approach it as a way to solve real problems, not as an end in itself. Good technology feels natural: it is dependable, understandable, and quietly does its job.</p>
-          <p>From the first question to the final detail, I value clarity, curiosity, and decisions that hold up beyond launch day.</p>
+          <p data-i18n="aboutBodyOne">I have <strong><span id="experience-years">8</span> years of experience</strong> creating software. I approach it as a way to solve real problems, not as an end in itself. Good technology feels natural: it is dependable, understandable, and quietly does its job.</p>
+          <p data-i18n="aboutBodyTwo">From the first question to the final detail, I value clarity, curiosity, and decisions that hold up beyond launch day.</p>
           <div class="principles">
-            <span>01&nbsp;&nbsp; Clarity first</span>
-            <span>02&nbsp;&nbsp; Build for people</span>
-            <span>03&nbsp;&nbsp; Keep improving</span>
+            <span data-i18n="principleOne">01&nbsp;&nbsp; Clarity first</span>
+            <span data-i18n="principleTwo">02&nbsp;&nbsp; Build for people</span>
+            <span data-i18n="principleThree">03&nbsp;&nbsp; Keep improving</span>
           </div>
         </div>
       </div>
@@ -91,10 +97,10 @@
     <section class="work" id="work">
       <div class="section-heading">
         <div>
-          <p class="section-number">02 / SELECTED WORK</p>
-          <h2>Things I’ve <em>built.</em></h2>
+          <p class="section-number" data-i18n="workSectionNumber">02 / SELECTED WORK</p>
+          <h2 data-i18n="workTitle">Things I’ve <em>built.</em></h2>
         </div>
-        <a class="text-link" href="#contact">Discuss a project <span>↗</span></a>
+        <a class="text-link" href="#contact" data-i18n="workAction">Discuss a project <span aria-hidden="true">↗</span></a>
       </div>
 
       <div class="project-list">
@@ -102,51 +108,51 @@
           <span class="project-index">01</span>
           <div>
             <h3>AudioBridge</h3>
-            <p>A local-first audio streaming system that turns an iPhone, iPad, or compatible Apple silicon Mac into a wireless speaker for Windows. It supports QR and manual pairing, multiple simultaneous receivers, lock-screen playback, and automatic low-latency buffer recovery.</p>
+            <p data-i18n="projectAudioBridgeDescription">A local-first audio streaming system that turns an iPhone, iPad, or compatible Apple silicon Mac into a wireless speaker for Windows. It supports QR and manual pairing, multiple simultaneous receivers, lock-screen playback, and automatic low-latency buffer recovery.</p>
           </div>
           <div class="project-meta"><span>Windows</span><span>iPhone</span><span>iPad</span><span>Mac</span><span>.NET 10</span><span>SwiftUI</span><span>EN / PL / ES</span></div>
-          <span class="project-arrow" aria-label="Open AudioBridge product page">↗</span>
+          <span class="project-arrow" aria-label="Open AudioBridge product page" data-i18n-aria-label="projectAudioBridgeAriaLabel">↗</span>
         </a>
         <a class="project" href="https://www.wenn.no/" target="_blank" rel="noreferrer">
           <span class="project-index">02</span>
           <div>
             <h3>WENN / CarEye</h3>
-            <p>Co-creating and designing the software systems behind a vehicle inspection platform operating across Europe and the US, with a focus on software architecture and cloud infrastructure.</p>
+            <p data-i18n="projectWennDescription">Co-creating and designing the software systems behind a vehicle inspection platform operating across Europe and the US, with a focus on software architecture and cloud infrastructure.</p>
           </div>
-          <div class="project-meta"><span>Software</span><span>Architecture</span><span>Cloud</span></div>
+          <div class="project-meta"><span data-i18n="tagSoftware">Software</span><span data-i18n="tagArchitecture">Architecture</span><span data-i18n="tagCloud">Cloud</span></div>
           <span class="project-arrow">↗</span>
         </a>
         <a class="project" href="https://github.com/whatsney/comarch-baselinker-sync" target="_blank" rel="noreferrer">
           <span class="project-index">03</span>
           <div>
             <h3>XML → BaseLinker Sync</h3>
-            <p>An audit-driven serverless catalog synchronizer for BaseLinker, first built after a native Comarch e-Sklep connection failed to handle variants, stock, relationships, and repeatable updates reliably. The runtime is source-agnostic: any shop, ERP, or PIM can use it when it can generate the expected product XML. It applies verified API differences, shows progress in a protected administration panel, and uses AWS Free Tier allowances plus a budget guard to keep the current workload at zero monthly cost.</p>
+            <p data-i18n="projectBaseLinkerDescription">An audit-driven serverless catalog synchronizer for BaseLinker, first built after a native Comarch e-Sklep connection failed to handle variants, stock, relationships, and repeatable updates reliably. The runtime is source-agnostic: any shop, ERP, or PIM can use it when it can generate the expected product XML. It applies verified API differences, shows progress in a protected administration panel, and uses AWS Free Tier allowances plus a budget guard to keep the current workload at zero monthly cost.</p>
           </div>
-          <div class="project-meta"><span>XML Feed</span><span>BaseLinker</span><span>Comarch e-Sklep</span><span>AWS</span><span>Python</span><span>Serverless</span><span>AWS CDK</span><span>API Integration</span></div>
-          <span class="project-arrow" aria-label="Open the XML to BaseLinker Sync repository">↗</span>
+          <div class="project-meta"><span data-i18n="tagXmlFeed">XML Feed</span><span>BaseLinker</span><span>Comarch e-Sklep</span><span>AWS</span><span>Python</span><span>Serverless</span><span>AWS CDK</span><span data-i18n="tagApiIntegration">API Integration</span></div>
+          <span class="project-arrow" aria-label="Open the XML to BaseLinker Sync repository" data-i18n-aria-label="projectBaseLinkerAriaLabel">↗</span>
         </a>
       </div>
     </section>
 
     <section class="contact" id="contact">
-      <p class="section-number">03 / CONTACT</p>
+      <p class="section-number" data-i18n="contactSectionNumber">03 / CONTACT</p>
       <div class="contact-grid">
         <div>
-          <h2>Have an idea?<br><em>Let’s talk.</em></h2>
-          <p>Have a potential project you would like to bring to life? Send me a short note about your idea, goals, and timeline. I’m open to interesting projects and new collaborations.</p>
-          <a class="contact-email" href="mailto:support@whatsney.com?subject=Potential%20project">
+          <h2 data-i18n="contactTitle">Have an idea?<br><em>Let’s talk.</em></h2>
+          <p data-i18n="contactBody">Have a potential project you would like to bring to life? Send me a short note about your idea, goals, and timeline. I’m open to interesting projects and new collaborations.</p>
+          <a class="contact-email" href="mailto:support@whatsney.com?subject=Potential%20project" data-i18n-href="contactMailHref">
             support@whatsney.com <span>↗</span>
           </a>
         </div>
         <div class="contact-links">
-          <a href="mailto:support@whatsney.com?subject=Potential%20project">
-            <span>Discuss a project</span><strong>Email me</strong><i>↗</i>
+          <a href="mailto:support@whatsney.com?subject=Potential%20project" data-i18n-href="contactMailHref">
+            <span data-i18n="contactProjectLabel">Discuss a project</span><strong data-i18n="contactEmailLabel">Email me</strong><i>↗</i>
           </a>
           <a href="https://www.linkedin.com/in/tomasz-%C5%82acny-617607121/" target="_blank" rel="noreferrer">
-            <span>Connect on</span><strong>LinkedIn</strong><i>↗</i>
+            <span data-i18n="contactConnectLabel">Connect on</span><strong>LinkedIn</strong><i>↗</i>
           </a>
           <a href="https://github.com/whatsney" target="_blank" rel="noreferrer">
-            <span>Follow on</span><strong>GitHub</strong><i>↗</i>
+            <span data-i18n="contactFollowLabel">Follow on</span><strong>GitHub</strong><i>↗</i>
           </a>
         </div>
       </div>
@@ -156,7 +162,7 @@
   <footer>
     <a class="logo" href="#top"><span class="logo-mark">w/</span><span>whatsney</span></a>
     <p>MGN Tomasz Łacny</p>
-    <p>© <span id="year">2026</span> All rights reserved.</p>
+    <p data-i18n="footerRights">© <span id="year">2026</span> All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
