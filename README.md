@@ -8,13 +8,14 @@ The site presents selected software work, including:
   and compatible Apple silicon Macs,
 - software architecture and cloud work for [WENN](https://www.wenn.no/),
 - an audit-driven, serverless
-  [Comarch e-Sklep to BaseLinker integration](https://github.com/whatsney/comarch-baselinker-sync)
-  built after the configured native connection did not fully handle variants,
-  stock, relationships, and repeatable updates.
+  [XML to BaseLinker catalog synchronizer](https://github.com/whatsney/comarch-baselinker-sync)
+  first deployed for Comarch e-Sklep after the configured native connection did
+  not fully handle variants, stock, relationships, and repeatable updates, but
+  usable with any source that can generate the expected product XML.
 
-The Comarch to BaseLinker system is designed to operate at zero monthly cost at
-its current workload by using renewing AWS Free Tier allowances where available
-and a budget guard for services that remain pay-as-you-go.
+The XML to BaseLinker system is designed to operate at zero monthly cost at its
+current workload by using renewing AWS Free Tier allowances where available and
+a budget guard for services that remain pay-as-you-go.
 
 AudioBridge supports QR and manual pairing, multiple simultaneous receivers,
 lock-screen playback, automatic playback-buffer recovery, and English, Polish,
